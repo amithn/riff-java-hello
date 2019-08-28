@@ -9,6 +9,7 @@ public class Hello implements Function<String, String> {
 		   Thread.sleep(1000);
                 } catch (InterruptedException e) {
                 }
-		return "Hello " + name;
+                System.out.println("Uppercasing .. " + name);
+		return name.toUpperCase();
 	}
 }
